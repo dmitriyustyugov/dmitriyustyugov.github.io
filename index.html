@@ -6,19 +6,15 @@
   <meta charset="utf-8">
   <script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
   <script type="text/javascript" src="//vk.com/js/api/openapi.js?142"></script>
+  <script type="text/javascript">
+    VK.init({apiId: 5950029});
+  </script>
 </head>
 
 <body>
 
   <p>Начало документа...</p>
   
-  <!-- Put this script tag to the <head> of your page -->
-  <script type="text/javascript">
-    VK.init({apiId: 5950029});
-  </script>
-
-  <!-- Put this div tag to the place, where Auth block will be -->
-
   <div id="vk_auth"></div>
   <script type="text/javascript">
     VK.Widgets.Auth("vk_auth", {authUrl: '/dev/Login'});
