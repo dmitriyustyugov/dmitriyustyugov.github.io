@@ -5,18 +5,23 @@
   <!-- Тег meta для указания кодировки -->
   <meta charset="utf-8">
   <script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
+  <script type="text/javascript" src="//vk.com/js/api/openapi.js?142"></script>
 </head>
 
 <body>
 
   <p>Начало документа...</p>
-  <script> 
-  VK.init(alert( 'API initialization succeeded!' ), function() { 
-     // API initialization failed
-  }, '5.63'); 
+  
+  <!-- Put this script tag to the <head> of your page -->
+  <script type="text/javascript">
+    VK.init({apiId: 5950029});
   </script>
-  <script>
-    alert( 'Привет, Мир!' );
+
+  <!-- Put this div tag to the place, where Auth block will be -->
+
+  <div id="vk_auth"></div>
+  <script type="text/javascript">
+    VK.Widgets.Auth("vk_auth", {authUrl: '/dev/Login'});
   </script>
 
 
