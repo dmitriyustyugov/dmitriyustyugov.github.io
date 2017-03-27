@@ -4,13 +4,20 @@
 <head>
   <!-- Тег meta для указания кодировки -->
   <meta charset="utf-8">
+  <script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
 </head>
 
 <body>
 
   <p>Начало документа...</p>
-  <script>
-    alert( 'Привет, Мир!' );
+  <script type="text/javascript"> 
+  VK.init(function() { 
+     // API initialization succeeded 
+     alert( 'API initialization succeeded!' );
+  }, function() { 
+     // API initialization failed 
+     // Can reload page here 
+  }, '5.63'); 
   </script>
 
   <p>...Конец документа</p>
