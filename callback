@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+  <script src="https://vk.com/js/api/xd_connection.js?2"></script>
+</head>
+
+<body>
+
+  <p>Вторая страница</p>
+  <script>
+  VK.addCallback('onLocationChanged', function f(location){ 
+            alert("location: " + location); 
+        });
+  </script>
+  
+</body>
+
+</html>
