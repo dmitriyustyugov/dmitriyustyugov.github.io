@@ -26,7 +26,7 @@
     link = document.getElementById('my');
       
     link.onclick = function() {        
-      alert('мои операции отностительно 1-ой ссылки: ' + this.getAttribute('href'));
+      VK.Auth.login(null, VK.access.FRIENDS);
       return false;
     }
   </script>
