@@ -17,23 +17,21 @@
     });
   </script>
   
-  <a href="#" id="vk-login">авторизироваться</a>
+  <a href="one" id="my">авторизироваться</a>	
+	
 	
   <script>
-  $('a#vk-login').click(function(event){
-	event.preventDefault();
-	VK.Auth.login(null, VK.access.FRIENDS);
-  });
+    var link;
+      
+    link = document.getElementById('my');
+      
+    link.onclick = function() {        
+      alert('мои операции отностительно 1-ой ссылки: ' + this.getAttribute('href'));
+      return false;
+    }
   </script>
-	
-  <a href="#" id="vk-login">авторизироваться</a>
-  
-  <script>
-  VK.addCallback('onLocationChanged', function f(location){ 
-            alert("location: " + location); 
-        });
-  </script>
-  
+	  
+ 
 </body>
 
 </html>
