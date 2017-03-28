@@ -17,12 +17,15 @@
     });
   </script>
   
+  <a href="#" id="vk-login">авторизироваться</a>
+	
   <script>
   $('a#vk-login').click(function(event){
 	event.preventDefault();
 	VK.Auth.login(null, VK.access.FRIENDS);
-});
+  });
   </script>
+	
   <a href="#" id="vk-login">авторизироваться</a>
   
   <script>
