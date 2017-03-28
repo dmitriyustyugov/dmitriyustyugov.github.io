@@ -4,15 +4,17 @@
 <head>
   <!-- Тег meta для указания кодировки -->
   <meta charset="utf-8">
-  <script src="https://vk.com/js/api/xd_connection.js?2"></script>
+  <script src="https://vk.com/js/api/openapi.js?143"></script>
 </head>
 
 <body>
 
   <p>Вторая страница</p>
   
-  <script> 
-    VK.init(alert("Инициализировалось"), alert("НЕ инициализировалось"), '5.63');
+  <script>
+    VK.init({
+      apiId: 5944222
+    });
   </script>
   
   <script>
