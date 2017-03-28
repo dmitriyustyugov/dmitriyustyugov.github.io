@@ -5,6 +5,7 @@
   <!-- Тег meta для указания кодировки -->
   <meta charset="utf-8">
   <script src="//vk.com/js/api/openapi.js?142"></script>
+  
 </head>
 
 <body>
@@ -19,7 +20,10 @@
   <script>
     VK.Widgets.Auth("vk_auth", {});
   </script>
-
+  
+  <script>
+    VK.callMethod("showSettingsBox", 8214);
+  </script>
 
   <p>...Конец документа!</p>
 
